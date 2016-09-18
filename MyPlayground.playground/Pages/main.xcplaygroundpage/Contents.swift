@@ -14,6 +14,11 @@
  ### 1. Create a function that will take in a continent and the number of countries in that continent. It should print the following sentence "____ is a continent which contains ___ countries".
  */
 // write your code here
+func printNumberOfCountries (nameOfContinent : String, numberOfCountries : Int){
+    print("\(nameOfContinent) is a continent which contains \(numberOfCountries) countries")
+}
+
+printNumberOfCountries("Asia", numberOfCountries: 50)
 
 
 
@@ -25,7 +30,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting(name: "Danny", "Hello")
+greeting("Danny", greeting: "Hello")
 
 
 
@@ -37,7 +42,7 @@ func daysInMonth(month: String, days: String) {
     print("There are \(days) in \(month)")
 }
 
-daysInMonth(month: "November", days: 30)
+daysInMonth("November", days: "30")
 
 
 
@@ -47,8 +52,11 @@ daysInMonth(month: "November", days: 30)
  */
 // write your code here
 
+func printDrink(beverageName : String, numOfBottles : Int, placeName : String){
+    print("\(numOfBottles) bottles of \(beverageName) on the \(placeName) wall")
+}
 
-
+printDrink("Beer", numOfBottles: 10, placeName: "Kitchen")
 
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
